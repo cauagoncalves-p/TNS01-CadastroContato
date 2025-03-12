@@ -65,6 +65,8 @@ namespace TNS01_CadastroContato
 
             MessageBox.Show("Cadastrado com sucesso!", "Parabéns", MessageBoxButtons.OK, MessageBoxIcon.Information);
             LimparCadastro();
+
+            MessageBox.Show($"Nome: {contato.Nome}\n Sobrenome: {contato.Sobrenome}\n Telefone: {contato.Sobrenome}\n Opção de contato escolhida: {contato.TelefoneChar}\n Email: {contato.Email}")
         }
     }
 }
