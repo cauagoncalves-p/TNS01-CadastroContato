@@ -33,8 +33,8 @@
             mnsCadastrar = new ToolStripMenuItem();
             mnsSobre = new ToolStripMenuItem();
             mnsListagem = new ToolStripMenuItem();
-            pictureBox1 = new PictureBox();
             mnsSair = new ToolStripMenuItem();
+            pictureBox1 = new PictureBox();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -66,7 +66,14 @@
             mnsListagem.Name = "mnsListagem";
             mnsListagem.Size = new Size(67, 20);
             mnsListagem.Text = "Listagem";
-            mnsListagem.Click += sairToolStripMenuItem_Click;
+            mnsListagem.Click += mnsListagem_Click;
+            // 
+            // mnsSair
+            // 
+            mnsSair.Name = "mnsSair";
+            mnsSair.Size = new Size(38, 20);
+            mnsSair.Text = "Sair";
+            mnsSair.Click += mnsSair_Click;
             // 
             // pictureBox1
             // 
@@ -78,13 +85,6 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
-            // 
-            // mnsSair
-            // 
-            mnsSair.Name = "mnsSair";
-            mnsSair.Size = new Size(38, 20);
-            mnsSair.Text = "Sair";
             // 
             // FormMain
             // 

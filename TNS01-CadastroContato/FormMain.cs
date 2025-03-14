@@ -23,14 +23,14 @@ namespace TNS01_CadastroContato
             form.ShowDialog();
         }
 
-        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        private void mnsSair_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void mnsListagem_Click(object sender, EventArgs e)
         {
-            FormListagem form = new FormListagem();
+            FormListagem form = new FormListagem(); 
             form.ShowDialog();
         }
     }

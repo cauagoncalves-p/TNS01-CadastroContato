@@ -17,7 +17,7 @@ namespace TNS01_CadastroContato
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void FormListagem_Load(object sender, EventArgs e)
         {
             dgvListaContatos.DataSource = Contato.CadastroContato;
         }
