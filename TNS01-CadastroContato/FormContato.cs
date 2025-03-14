@@ -40,18 +40,20 @@ namespace TNS01_CadastroContato
             contato.Nome = txtNome.Text;
             contato.Sobrenome = txtSobrenome.Text;
             contato.Telefone = mkdTelefone.Text;
+            // 11 98887-4587
+            // 01 2345678910
 
             if (rdbPessoal.Checked)
             {
-                contato.TelefoneChar = "Pessoal";
+                contato.TelefoneChar = Contato.TipoTelefone.Pessoal;
             }
             else if (rdbComercial.Checked)
             {
-                contato.TelefoneChar = "Comercial";
+                contato.TelefoneChar = Contato.TipoTelefone.Comercial;
             }
             else if (rdbRecado.Checked)
             {
-                contato.TelefoneChar = "Recado";
+                contato.TelefoneChar = Contato.TipoTelefone.Recado ;
             }
             else 
             {
@@ -66,7 +68,7 @@ namespace TNS01_CadastroContato
             MessageBox.Show("Cadastrado com sucesso!", "Parabéns", MessageBoxButtons.OK, MessageBoxIcon.Information);
             LimparCadastro();
 
-            MessageBox.Show($"Nome: {contato.Nome}\n Sobrenome: {contato.Sobrenome}\n Telefone: {contato.Sobrenome}\n Opção de contato escolhida: {contato.TelefoneChar}\n Email: {contato.Email}")
+            MessageBox.Show($"Nome: {contato.Nome}\n Sobrenome: {contato.Sobrenome}\n Telefone: {contato.Telefone}\n Opção de contato escolhida: {contato.TelefoneChar}\n Email: {contato.Email}");
         }
     }
 }

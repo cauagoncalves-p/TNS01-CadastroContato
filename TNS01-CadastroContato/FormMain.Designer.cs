@@ -30,52 +30,61 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             menuStrip1 = new MenuStrip();
-            cadastrarToolStripMenuItem = new ToolStripMenuItem();
-            sobreToolStripMenuItem = new ToolStripMenuItem();
-            sairToolStripMenuItem = new ToolStripMenuItem();
+            mnsCadastrar = new ToolStripMenuItem();
+            mnsSobre = new ToolStripMenuItem();
+            mnsListagem = new ToolStripMenuItem();
             pictureBox1 = new PictureBox();
+            mnsSair = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { cadastrarToolStripMenuItem, sobreToolStripMenuItem, sairToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { mnsCadastrar, mnsSobre, mnsListagem, mnsSair });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(567, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
-            // cadastrarToolStripMenuItem
+            // mnsCadastrar
             // 
-            cadastrarToolStripMenuItem.Name = "cadastrarToolStripMenuItem";
-            cadastrarToolStripMenuItem.Size = new Size(69, 20);
-            cadastrarToolStripMenuItem.Text = "Cadastrar";
-            cadastrarToolStripMenuItem.Click += cadastrarToolStripMenuItem_Click;
+            mnsCadastrar.Name = "mnsCadastrar";
+            mnsCadastrar.Size = new Size(69, 20);
+            mnsCadastrar.Text = "Cadastrar";
+            mnsCadastrar.Click += cadastrarToolStripMenuItem_Click;
             // 
-            // sobreToolStripMenuItem
+            // mnsSobre
             // 
-            sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            sobreToolStripMenuItem.Size = new Size(49, 20);
-            sobreToolStripMenuItem.Text = "Sobre";
+            mnsSobre.Name = "mnsSobre";
+            mnsSobre.Size = new Size(49, 20);
+            mnsSobre.Text = "Sobre";
             // 
-            // sairToolStripMenuItem
+            // mnsListagem
             // 
-            sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            sairToolStripMenuItem.Size = new Size(38, 20);
-            sairToolStripMenuItem.Text = "Sair";
-            sairToolStripMenuItem.Click += sairToolStripMenuItem_Click;
+            mnsListagem.Name = "mnsListagem";
+            mnsListagem.Size = new Size(67, 20);
+            mnsListagem.Text = "Listagem";
+            mnsListagem.Click += sairToolStripMenuItem_Click;
             // 
             // pictureBox1
             // 
+            pictureBox1.Dock = DockStyle.Fill;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(0, 27);
+            pictureBox1.Location = new Point(0, 24);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(602, 437);
+            pictureBox1.Size = new Size(567, 426);
+            pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
+            // 
+            // mnsSair
+            // 
+            mnsSair.Name = "mnsSair";
+            mnsSair.Size = new Size(38, 20);
+            mnsSair.Text = "Sair";
             // 
             // FormMain
             // 
@@ -98,9 +107,10 @@
         #endregion
 
         private MenuStrip menuStrip1;
-        private ToolStripMenuItem cadastrarToolStripMenuItem;
-        private ToolStripMenuItem sobreToolStripMenuItem;
-        private ToolStripMenuItem sairToolStripMenuItem;
+        private ToolStripMenuItem mnsCadastrar;
+        private ToolStripMenuItem mnsSobre;
+        private ToolStripMenuItem mnsListagem;
         private PictureBox pictureBox1;
+        private ToolStripMenuItem mnsSair;
     }
 }

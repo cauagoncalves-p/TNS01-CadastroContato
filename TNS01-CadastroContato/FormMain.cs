@@ -30,7 +30,8 @@ namespace TNS01_CadastroContato
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            FormListagem form = new FormListagem();
+            form.ShowDialog();
         }
     }
 }
