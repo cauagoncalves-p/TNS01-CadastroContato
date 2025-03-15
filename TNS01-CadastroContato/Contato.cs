@@ -9,14 +9,13 @@ namespace TNS01_CadastroContato
 {
     public class Contato
     {
-        public Contato(int codigo, string? nome, string? sobrenome, string? telefone, TipoTelefone? telefoneChar, string? email)
+        public Contato(string? nome, string? sobrenome, string? telefone, TipoTelefone? telefoneChar, string? email)
         {
             Nome = nome;
             Sobrenome = sobrenome;
             Telefone = telefone;
             TelefoneChar = telefoneChar;
             Email = email;
-            Codigo = codigo;
         }
 
         public Contato() 
@@ -33,7 +32,6 @@ namespace TNS01_CadastroContato
         }
 
         public static List<Contato> CadastroContato = new List<Contato>();
-        public int Codigo { get; set; }
         public string? Nome { get; set; }
         public string? Sobrenome { get; set; }
         public string? Telefone { get; set; }
