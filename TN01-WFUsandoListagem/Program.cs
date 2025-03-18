@@ -1,4 +1,5 @@
-namespace TNS01_CadastroContato;
+namespace TN01_WFUsandoListagem
+{
     internal static class Program
     {
         /// <summary>
@@ -10,6 +11,7 @@ namespace TNS01_CadastroContato;
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new FormMain());
+            Application.Run(new FormLogin());
         }
     }
+}

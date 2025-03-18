@@ -25,9 +25,8 @@ namespace TNS01_CadastroContato
             rdbPessoal.Checked = false;
             rdbRecado.Checked = false;
             mkdTelefone.Clear();
-
-            
         }
+
         private void btnVoltar_Click(object sender, EventArgs e)
         {
             this.Close();
