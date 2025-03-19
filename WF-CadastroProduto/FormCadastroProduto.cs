@@ -42,7 +42,7 @@ namespace WF_CadastroProduto
         {
              Produto produto = new Produto();
 
-            if (string.IsNullOrEmpty(mktCodigo.Text))
+            if (mktCodigo.Text == "" )
             {
                 Error("Código do produto não pode ser nulo");
                 return;

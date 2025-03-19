@@ -19,7 +19,7 @@ namespace WF_CadastroProduto
 
         private void FormListagem_Load(object sender, EventArgs e)
         {
-            dgvListaContatos.DataSource = Produto.ListaProduto;
+            dgvListaProduto.DataSource = Produto.ListaProduto;
         }
     }
 }
