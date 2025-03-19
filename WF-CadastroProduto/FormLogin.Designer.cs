@@ -64,10 +64,11 @@
             // 
             // txtSenha
             // 
+            txtSenha.Font = new Font("Wingdings", 9F, FontStyle.Regular, GraphicsUnit.Point, 2);
             txtSenha.Location = new Point(24, 166);
             txtSenha.Name = "txtSenha";
-            txtSenha.PasswordChar = '*';
-            txtSenha.Size = new Size(100, 23);
+            txtSenha.PasswordChar = 'l';
+            txtSenha.Size = new Size(100, 21);
             txtSenha.TabIndex = 3;
             // 
             // btnLogar

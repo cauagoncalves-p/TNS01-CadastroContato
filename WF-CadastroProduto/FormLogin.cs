@@ -54,6 +54,10 @@ namespace WF_CadastroProduto
                     Logado("Olá. você conseguiu logar no programa!");
                     FormMain form = new FormMain();
                     form.ShowDialog();
+
+                    txtUsuario.Clear();
+                    txtSenha.Clear();
+                    
                     return;
                 }
             }
