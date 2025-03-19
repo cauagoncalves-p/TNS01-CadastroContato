@@ -85,6 +85,14 @@ namespace WF_CadastroProduto
             produto.Descricao = txtDescricao.Text;
             produto.Preco = double.Parse(nudPreco.Value.ToString());
 
+            foreach (var item in Produto.ListaProduto) 
+            {
+                if (produto.Codigo == item.Codigo)
+                {
+                    Error("Código do produto já cadastrado");
+                    return;
+                }
+            }
 
             Logado("Produto cadastrado com sucesso!");
             LimparTela();
